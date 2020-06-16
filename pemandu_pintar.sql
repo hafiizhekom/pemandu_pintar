@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1:3306
--- Generation Time: Jun 16, 2020 at 10:21 AM
+-- Generation Time: Jun 16, 2020 at 10:27 AM
 -- Server version: 5.7.26
 -- PHP Version: 7.3.5
 
@@ -134,14 +134,14 @@ CREATE TABLE IF NOT EXISTS `user` (
   `no_rekening` varchar(20) DEFAULT NULL,
   `riwayat_penyakit` text,
   `keterangan` text,
-  `bank` varchar(20) NOT NULL,
+  `bank` varchar(20) DEFAULT NULL,
   `foto` text NOT NULL,
   `password` varchar(32) NOT NULL,
   `role` varchar(7) NOT NULL,
   `updated_at` datetime NOT NULL,
   `created_at` datetime NOT NULL,
   PRIMARY KEY (`id`)
-) ENGINE=InnoDB AUTO_INCREMENT=9 DEFAULT CHARSET=latin1;
+) ENGINE=InnoDB AUTO_INCREMENT=10 DEFAULT CHARSET=latin1;
 
 --
 -- Dumping data for table `user`
@@ -154,7 +154,8 @@ INSERT INTO `user` (`id`, `nama_lengkap`, `tanggal_lahir`, `jenis_kelamin`, `ala
 (5, 'Besta', '2020-06-24', 'p', 'asdc', '123123', 'besta@yahoo.com', '12312', NULL, '', '', '5.png', '827ccb0eea8a706c4c34a16891f84e7b', 'pemandu', '2020-06-12 21:00:00', '2020-06-11 12:30:18'),
 (6, 'Lili', '2020-06-03', 'w', 'asdasd', '12345', 'lili@yahoo.com', NULL, 'asdas', '', '', '.jpeg', '827ccb0eea8a706c4c34a16891f84e7b', 'pendaki', '2020-06-11 20:08:46', '2020-06-11 20:08:46'),
 (7, 'Haha', '2020-05-06', 'p', 'asa', '1231', 'hah@yahoo.com', '12312', NULL, '', '', '.gif', '827ccb0eea8a706c4c34a16891f84e7b', 'pemandu', '2020-06-11 20:47:42', '2020-06-11 20:47:42'),
-(8, 'Dian', '2020-06-03', 'w', 'asdasd', '123453242', 'dian@yahoo.com', '1243124123', NULL, NULL, 'BCA', '.png', '827ccb0eea8a706c4c34a16891f84e7b', 'pemandu', '2020-06-12 21:18:00', '2020-06-12 21:18:00');
+(8, 'Dian', '2020-06-03', 'w', 'asdasd', '123453242', 'dian@yahoo.com', '1243124123', NULL, NULL, 'BCA', '.png', '827ccb0eea8a706c4c34a16891f84e7b', 'pemandu', '2020-06-12 21:18:00', '2020-06-12 21:18:00'),
+(9, 'Ali', '2020-05-14', 'p', 'Jl. Test', '12389', 'ali@yahoo.com', NULL, 'Tidak ada', NULL, NULL, '.png', '827ccb0eea8a706c4c34a16891f84e7b', 'pendaki', '2020-06-16 10:26:41', '2020-06-16 10:26:41');
 
 --
 -- Constraints for dumped tables
